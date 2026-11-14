@@ -23,7 +23,8 @@
     var f = document.createElement('iframe');
     f.src = APP + '?id=' + encodeURIComponent(id);
     f.title = 'Ficha de propiedad';
-    f.setAttribute('allow', 'clipboard-write');
+    f.setAttribute('allow', 'clipboard-write; fullscreen; autoplay; encrypted-media; picture-in-picture; accelerometer; gyroscope; xr-spatial-tracking');
+    f.setAttribute('allowfullscreen', '');
     document.body.appendChild(f);
   } else {
     document.body.innerHTML = '<div class="msg">Ficha no encontrada.</div>';
